@@ -15,7 +15,8 @@ function Home() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
-              duration: 1.8,
+              duration: 2.0,
+              delay: 1.7,
               ease: "easeOut",
             }}
           >
@@ -26,9 +27,9 @@ function Home() {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
-              duration: 1.0,
+              duration: 2.5,
               ease: "easeOut",
-              delay: 1.5,
+              delay: 2.0,
             }}
           >
             Frontend Engineer

@@ -92,9 +92,18 @@ function Nav() {
       )}
       <nav className="fixed top-0 left-0 right-0 z-50">
         <div className="flex items-center justify-between p-5">
-          <h1 className="font-bold uppercase font-cabinet text-xl">
+          <motion.h1
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 1.9,
+              delay: 1.0,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className="font-bold uppercase font-cabinet text-xl"
+          >
             Jchael<sup>&copy;</sup>
-          </h1>
+          </motion.h1>
           <div className="z-50">
             <motion.div
               initial={false}
