@@ -68,10 +68,10 @@ function Nav() {
   };
 
   const menuItems = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "works", label: "Works" },
-    { id: "testimonials", label: "Testimonials" },
+    { id: "home", label: "Home", threshold: 0.5 },
+    { id: "about", label: "About", threshold: 0.3 },
+    { id: "works", label: "Works", threshold: 0.3 },
+    { id: "testimonials", label: "Testimonials", threshold: 0.3 },
   ];
 
   const socialIcons = [

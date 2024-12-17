@@ -4,10 +4,7 @@ const header1 = `font-semibold text-[#212529] font-general uppercase text-[9rem]
 
 function Home() {
   return (
-    <header
-      id="home"
-      className="w-10/12 mx-auto min-h-screen flex items-center"
-    >
+    <section id="home" className="w-10/12 mx-auto h-screen flex items-center">
       <div className="flex items-center justify-center p-10">
         <div className="text-center mt-18">
           <motion.h1
@@ -36,7 +33,7 @@ function Home() {
           </motion.span>
         </div>
       </div>
-    </header>
+    </section>
   );
 }
 
