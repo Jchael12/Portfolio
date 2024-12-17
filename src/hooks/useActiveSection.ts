@@ -9,9 +9,6 @@ export function useActiveSection() {
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          console.log(
-            `Section ${entry.target.id} is intersecting with ratio: ${entry.intersectionRatio}`
-          );
           setActiveSection(entry.target.id);
         }
       });
@@ -19,10 +16,12 @@ export function useActiveSection() {
 
     const sections = document.querySelectorAll("section[id]");
     sections.forEach((section) => {
+      const threshold = section.id === "home" ? 0.5 : 0.3;
+
       const observer = new IntersectionObserver(observerCallback, {
         root: null,
         rootMargin: "0px",
-        threshold: 0.8,
+        threshold: threshold,
       });
 
       observer.observe(section);

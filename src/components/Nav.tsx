@@ -57,7 +57,7 @@ const socialVariants = {
   },
 };
 
-function Nav() {
+function Nav({ isDark }: { isDark: boolean }) {
   const [isOpen, setOpen] = useState(false);
   const scrollToSection = useScroll();
   const activeSection = useActiveSection();
@@ -68,7 +68,7 @@ function Nav() {
   };
 
   const menuItems = [
-    { id: "home", label: "Home", threshold: 0.5 },
+    { id: "home", label: "Home", threshold: 0.8 },
     { id: "about", label: "About", threshold: 0.3 },
     { id: "works", label: "Works", threshold: 0.3 },
     { id: "testimonials", label: "Testimonials", threshold: 0.3 },
@@ -97,7 +97,11 @@ function Nav() {
         <div className="flex items-center justify-between p-5">
           <motion.h1
             initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
+            animate={{
+              opacity: 1,
+              scale: 1,
+              color: isDark ? "#f8f9fa" : "#212529",
+            }}
             transition={{
               duration: 1.9,
               delay: 1.0,
