@@ -75,9 +75,12 @@ function Nav() {
   ];
 
   const socialIcons = [
-    { Icon: Github, href: "https://github.com" },
-    { Icon: Linkedin, href: "https://linkedin.com" },
-    { Icon: Facebook, href: "https://facebook.com" },
+    { Icon: Github, href: "https://github.com/Jchael12" },
+    {
+      Icon: Linkedin,
+      href: "https://www.linkedin.com/in/jhon-michael-abbas-40b5602a3/",
+    },
+    { Icon: Facebook, href: "https://www.facebook.com/johnmichael.abbas" },
   ];
 
   return (
