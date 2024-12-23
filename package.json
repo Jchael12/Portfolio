@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gsap": "^3.12.5",
     "hamburger-react": "^2.5.1",
     "locomotive-scroll": "^4.1.4",
     "lucide-react": "^0.468.0",

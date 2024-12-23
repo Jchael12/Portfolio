@@ -12,12 +12,12 @@ function Home() {
       <div className="flex items-center justify-center p-10 relative z-10 w-1/2 h-full">
         <div className="text-center mt-18 text-white">
           <motion.h1
-            className={header1}
+            className={`${header1}`}
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
               duration: 2.0,
-              delay: 1.7,
+              delay: 2.5,
               ease: "easeOut",
             }}
           >
@@ -30,19 +30,22 @@ function Home() {
             transition={{
               duration: 2.5,
               ease: "easeOut",
-              delay: 2.0,
+              delay: 3.0,
             }}
           >
             Jhon Michael Abbas
           </motion.span>
         </div>
       </div>
-      <div className="absolute inset-y-0 right-0 w-1/2">
-        <img
+      <div className="absolute inset-y-0 right-0 w-1/2 p-5">
+        <motion.img
           src={profile}
           style={{ objectPosition: "50% 40%" }}
-          className="w-full h-full object-cover rounded-md"
+          className="w-full h-full object-cover rounded-lg"
           alt="Profile"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5, delay: 1.0 }}
         />
       </div>
     </section>

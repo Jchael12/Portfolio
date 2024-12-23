@@ -9,8 +9,8 @@ import Testimonials from "./components/links/Testimonials";
 import Works from "./components/links/Works";
 
 function App() {
-  const containerRef = useRef(null);
-  const [bgColor, setBgColor] = useState("#ced4da");
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [bgColor, setBgColor] = useState<string>("#ced4da");
   const isDark = bgColor === "#212529";
 
   const options = {
