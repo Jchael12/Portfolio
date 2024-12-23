@@ -20,7 +20,7 @@ function About({ setBgColor }: { setBgColor: (color: string) => void }) {
       animate={isInView ? { color: "#dee2e6" } : { color: "#212529" }}
       transition={{ duration: 0.8 }}
     >
-      <div className="text-8xl font-semibold text-center">
+      <div className="text-[6.5rem] font-cabinet leading-snug font-semibold text-center">
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}

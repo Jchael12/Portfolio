@@ -10,7 +10,7 @@ import Works from "./components/links/Works";
 
 function App() {
   const containerRef = useRef(null);
-  const [bgColor, setBgColor] = useState("#dee2e6");
+  const [bgColor, setBgColor] = useState("#ced4da");
   const isDark = bgColor === "#212529";
 
   const options = {

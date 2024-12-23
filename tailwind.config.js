@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         'general': ['General Sans', 'sans-serif'],
-        'cabinet': ['Cabinet Grotesk', 'sans']
+        'cabinet': ['Cabinet Grotesk', 'sans'],
+        'montserrat': ['Montserrat', 'sans-serif'],
       }
     },
   },

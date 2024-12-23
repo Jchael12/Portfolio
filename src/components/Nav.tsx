@@ -140,7 +140,7 @@ function Nav({ isDark }: { isDark: boolean }) {
                 <motion.li key={item.id} variants={itemVariants}>
                   <button
                     onClick={() => handleNavClick(item.id)}
-                    className={`text-6xl font-bold uppercase transition-colors ${
+                    className={`text-7xl font-general font-semibold uppercase transition-colors ${
                       activeSection === item.id
                         ? "text-[#f8f9fa]"
                         : "text-[#6c757d] hover:text-[#f8f9fa]"
@@ -152,7 +152,10 @@ function Nav({ isDark }: { isDark: boolean }) {
               ))}
             </motion.ul>
             <div className="space-y-5">
-              <motion.p variants={itemVariants} className="text-[#e9ecef]">
+              <motion.p
+                variants={itemVariants}
+                className="text-[#e9ecef] font-cabinet"
+              >
                 jhonmichaelabbas0712@gmail.com
               </motion.p>
               <motion.div className="flex space-x-4">
