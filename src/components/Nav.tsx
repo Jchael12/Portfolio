@@ -133,14 +133,14 @@ function Nav({ isDark }: { isDark: boolean }) {
             initial="closed"
             animate={isOpen ? "open" : "closed"}
             variants={menuVariants}
-            className="w-1/2 h-screen bg-[#212529] absolute top-0 right-0 p-10 flex flex-col justify-between"
+            className="md:w-1/2 w-full h-screen bg-[#212529] absolute top-0 right-0 md:p-10 p-5 flex flex-col justify-between"
           >
-            <motion.ul className="space-y-8">
+            <motion.ul className="space-y-8 mt-16 md:mt-0">
               {menuItems.map((item) => (
                 <motion.li key={item.id} variants={itemVariants}>
                   <button
                     onClick={() => handleNavClick(item.id)}
-                    className={`text-7xl font-general font-semibold uppercase transition-colors ${
+                    className={`md:text-7xl text-6xl font-general font-semibold uppercase transition-colors ${
                       activeSection === item.id
                         ? "text-[#f8f9fa]"
                         : "text-[#6c757d] hover:text-[#f8f9fa]"
@@ -151,7 +151,7 @@ function Nav({ isDark }: { isDark: boolean }) {
                 </motion.li>
               ))}
             </motion.ul>
-            <div className="space-y-5">
+            <div className="space-y-4">
               <motion.p
                 variants={itemVariants}
                 className="text-[#e9ecef] font-cabinet"

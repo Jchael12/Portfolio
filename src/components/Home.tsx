@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
 import profile from "../assets/profile2.png";
 
-const header1 = `font-bold text-[#212529] font-cabinet uppercase text-[8rem]`;
+const header1 = `font-bold text-[#212529] font-cabinet uppercase md:text-[8rem] text-[4rem]`;
 
 function Home() {
   return (
     <section
       id="home"
-      className="w-full h-screen flex items-center justify-between relative"
+      className="w-full h-screen flex flex-col-reverse md:flex-row items-center justify-between relative"
     >
-      <div className="flex items-center justify-center p-10 relative z-10 w-1/2 h-full">
-        <div className="text-center mt-18 text-white">
+      <div className="flex items-center justify-center p-10 relative z-10 md:w-1/2 md:h-full mt-28 md:mt-0">
+        <div className="text-center md:mt-18 text-white">
           <motion.h1
             className={`${header1}`}
             initial={{ y: 100, opacity: 0 }}
@@ -37,7 +37,7 @@ function Home() {
           </motion.span>
         </div>
       </div>
-      <div className="absolute inset-y-0 right-0 w-1/2 p-5">
+      <div className="absolute md:inset-y-0 md:right-0 md:w-1/2 w-56 top-24 md:p-5">
         <motion.img
           src={profile}
           style={{ objectPosition: "50% 40%" }}
